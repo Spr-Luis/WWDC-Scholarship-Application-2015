@@ -19,12 +19,19 @@ class ContentThreeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.headImage.alpha = 0
+    
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
+        UIView.animateWithDuration(1.5, animations: { () -> Void in
+            
+            self.headImage.alpha = 1
+            
+        })
     }
     
 

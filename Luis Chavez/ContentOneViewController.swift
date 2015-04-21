@@ -16,16 +16,29 @@ class ContentOneViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     
+    @IBOutlet weak var verticalConstraint: NSLayoutConstraint!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.headImage.layer.borderColor = UIColor(red:0.22, green:0.54, blue:0.98, alpha:1).CGColor
+        self.headImage.layer.borderWidth = 3.0
+        
+        self.headImage.alpha = 0
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
+        UIView.animateWithDuration(1.5, animations: { () -> Void in
+            
+            self.headImage.alpha = 1
+            
+        })
     }
     
 

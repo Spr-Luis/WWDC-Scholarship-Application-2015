@@ -82,6 +82,14 @@ class ViewController: UIViewController,UIPageViewControllerDataSource,UIPageView
     }
 
 
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return 4
+    }
+    
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return 0
+    }
+    
 
 }
 

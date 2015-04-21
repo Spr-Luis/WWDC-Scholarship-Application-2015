@@ -159,7 +159,7 @@
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="jmT-1z-mDq">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
@@ -210,7 +210,9 @@
                             <constraint firstAttribute="trailing" secondItem="v9n-rG-gcM" secondAttribute="trailing" constant="34" id="cxn-HT-fAr"/>
                             <constraint firstAttribute="trailing" secondItem="PDw-Uo-lJF" secondAttribute="trailing" constant="34" id="eNT-pJ-Bgi"/>
                             <constraint firstAttribute="centerX" secondItem="u3n-Kk-AcP" secondAttribute="centerX" id="oim-Dj-iiG"/>
-                            <constraint firstItem="PDw-Uo-lJF" firstAttribute="top" secondItem="v9n-rG-gcM" secondAttribute="bottom" constant="8" id="p37-OO-E5A"/>
+                            <constraint firstItem="PDw-Uo-lJF" firstAttribute="top" secondItem="v9n-rG-gcM" secondAttribute="bottom" constant="8" id="p37-OO-E5A">
+                                <variation key="heightClass=regular-widthClass=compact" constant="4"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -260,6 +262,7 @@
                         <outlet property="headImage" destination="u3n-Kk-AcP" id="OK0-J9-sdh"/>
                         <outlet property="subTitleLabel" destination="v9n-rG-gcM" id="NOT-8P-w4p"/>
                         <outlet property="titleLabel" destination="KRE-By-pme" id="qle-fa-tPt"/>
+                        <outlet property="verticalConstraint" destination="Qsp-vO-Cko" id="inv-dS-IaG"/>
                     </connections>
                 </viewController>
             </objects>
@@ -318,7 +321,7 @@
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="QdV-o2-EAl">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
@@ -363,7 +366,9 @@
                             <constraint firstItem="m6Y-dh-T42" firstAttribute="top" secondItem="SNr-5i-dPw" secondAttribute="bottom" constant="8" id="9sh-vi-0Xl"/>
                             <constraint firstAttribute="trailing" secondItem="SNr-5i-dPw" secondAttribute="trailing" constant="34" id="F21-6x-XwQ"/>
                             <constraint firstItem="m6Y-dh-T42" firstAttribute="leading" secondItem="wNo-SR-zEM" secondAttribute="leading" constant="35" id="GQN-kI-GtK"/>
-                            <constraint firstItem="2Ph-v0-ArB" firstAttribute="top" secondItem="m6Y-dh-T42" secondAttribute="bottom" constant="8" id="I3S-gB-VXr"/>
+                            <constraint firstItem="2Ph-v0-ArB" firstAttribute="top" secondItem="m6Y-dh-T42" secondAttribute="bottom" constant="8" id="I3S-gB-VXr">
+                                <variation key="heightClass=regular-widthClass=compact" constant="4"/>
+                            </constraint>
                             <constraint firstItem="SNr-5i-dPw" firstAttribute="top" secondItem="hoJ-Mt-aTQ" secondAttribute="bottom" constant="8" id="XIa-8R-hzG"/>
                             <constraint firstAttribute="trailing" secondItem="2Ph-v0-ArB" secondAttribute="trailing" constant="34" id="YHQ-Wr-Ug2"/>
                             <constraint firstAttribute="centerY" secondItem="hoJ-Mt-aTQ" secondAttribute="centerY" id="fc2-Dk-N1i">
@@ -477,7 +482,7 @@
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="2EL-QS-4f3">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
@@ -521,7 +526,9 @@
                             <constraint firstItem="oAT-15-3AB" firstAttribute="top" secondItem="khB-Qj-2mu" secondAttribute="bottom" constant="8" id="9AI-Zd-YTg"/>
                             <constraint firstAttribute="trailing" secondItem="yVN-2t-IIT" secondAttribute="trailing" constant="34" id="Hxo-Jh-CWA"/>
                             <constraint firstItem="khB-Qj-2mu" firstAttribute="leading" secondItem="4bB-VU-Xiy" secondAttribute="leading" constant="35" id="XR6-kY-fsG"/>
-                            <constraint firstItem="yVN-2t-IIT" firstAttribute="top" secondItem="oAT-15-3AB" secondAttribute="bottom" constant="8" id="cvH-dp-FGx"/>
+                            <constraint firstItem="yVN-2t-IIT" firstAttribute="top" secondItem="oAT-15-3AB" secondAttribute="bottom" constant="8" id="cvH-dp-FGx">
+                                <variation key="heightClass=regular-widthClass=compact" constant="4"/>
+                            </constraint>
                             <constraint firstAttribute="centerY" secondItem="4Xz-FR-mRx" secondAttribute="centerY" id="k5c-vb-YP0">
                                 <variation key="heightClass=regular-widthClass=compact" constant="77"/>
                             </constraint>
@@ -636,7 +643,7 @@
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="uDY-iC-mxQ">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
@@ -676,7 +683,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="R1c-8A-Hwe" secondAttribute="trailing" constant="34" id="ALX-9O-gHy"/>
-                            <constraint firstItem="R1c-8A-Hwe" firstAttribute="top" secondItem="hb6-nc-lUm" secondAttribute="bottom" constant="8" id="BAA-As-6wC"/>
+                            <constraint firstItem="R1c-8A-Hwe" firstAttribute="top" secondItem="hb6-nc-lUm" secondAttribute="bottom" constant="8" id="BAA-As-6wC">
+                                <variation key="heightClass=regular-widthClass=compact" constant="4"/>
+                            </constraint>
                             <constraint firstItem="hb6-nc-lUm" firstAttribute="leading" secondItem="kjS-rv-0He" secondAttribute="leading" constant="35" id="H53-01-lO4"/>
                             <constraint firstItem="pSe-g3-6ii" firstAttribute="leading" secondItem="kjS-rv-0He" secondAttribute="leading" constant="35" id="IEp-rq-m1m"/>
                             <constraint firstItem="hb6-nc-lUm" firstAttribute="top" secondItem="pSe-g3-6ii" secondAttribute="bottom" constant="8" id="gvN-Nk-LE3"/>
