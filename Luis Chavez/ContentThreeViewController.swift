@@ -9,6 +9,12 @@
 import UIKit
 
 class ContentThreeViewController: UIViewController {
+    
+    @IBOutlet weak var headImage: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subTitleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -234,6 +234,12 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="PDw-Uo-lJF" id="W4S-E5-lM5"/>
+                        <outlet property="headImage" destination="u3n-Kk-AcP" id="OK0-J9-sdh"/>
+                        <outlet property="subTitleLabel" destination="v9n-rG-gcM" id="NOT-8P-w4p"/>
+                        <outlet property="titleLabel" destination="KRE-By-pme" id="qle-fa-tPt"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-564" y="647.25"/>
@@ -393,6 +399,12 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="2Ph-v0-ArB" id="CRs-hm-LcT"/>
+                        <outlet property="headImage" destination="hoJ-Mt-aTQ" id="c0f-uE-rNo"/>
+                        <outlet property="subTitleLabel" destination="m6Y-dh-T42" id="0gT-Ua-Gq8"/>
+                        <outlet property="titleLabel" destination="SNr-5i-dPw" id="zp4-jr-Qsk"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="148.5" y="647.25"/>
@@ -552,6 +564,12 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="yVN-2t-IIT" id="uLL-eZ-1Vb"/>
+                        <outlet property="headImage" destination="4Xz-FR-mRx" id="IF4-Au-wH4"/>
+                        <outlet property="subTitleLabel" destination="oAT-15-3AB" id="qqR-hZ-osw"/>
+                        <outlet property="titleLabel" destination="khB-Qj-2mu" id="MHE-MN-nge"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="856.5" y="647.25"/>
@@ -711,6 +729,12 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="R1c-8A-Hwe" id="Cf0-IS-v7B"/>
+                        <outlet property="headImage" destination="F3l-DL-NxN" id="pDt-bf-l39"/>
+                        <outlet property="subTitleLabel" destination="hb6-nc-lUm" id="BKL-ry-ItW"/>
+                        <outlet property="titleLabel" destination="pSe-g3-6ii" id="0gS-Uo-M7e"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1582.5" y="647.25"/>
