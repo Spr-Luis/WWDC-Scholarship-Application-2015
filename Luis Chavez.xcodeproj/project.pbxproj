@@ -13,6 +13,10 @@
 		A0D584D71AE606CF0006EAE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D584D61AE606CF0006EAE5 /* Images.xcassets */; };
 		A0D584DA1AE606CF0006EAE5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D584D81AE606CF0006EAE5 /* LaunchScreen.xib */; };
 		A0D584E61AE606CF0006EAE5 /* Luis_ChavezTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D584E51AE606CF0006EAE5 /* Luis_ChavezTests.swift */; };
+		A0D584F41AE619A00006EAE5 /* ContentOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D584F31AE619A00006EAE5 /* ContentOneViewController.swift */; };
+		A0D584F71AE619B30006EAE5 /* ContentTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D584F61AE619B30006EAE5 /* ContentTwoViewController.swift */; };
+		A0D584FA1AE61A480006EAE5 /* ContentThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D584F91AE61A480006EAE5 /* ContentThreeViewController.swift */; };
+		A0D584FD1AE61A5D0006EAE5 /* ContentFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D584FC1AE61A5D0006EAE5 /* ContentFourViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		A0D584DF1AE606CF0006EAE5 /* Luis ChavezTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Luis ChavezTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D584E41AE606CF0006EAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0D584E51AE606CF0006EAE5 /* Luis_ChavezTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luis_ChavezTests.swift; sourceTree = "<group>"; };
+		A0D584F31AE619A00006EAE5 /* ContentOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentOneViewController.swift; sourceTree = "<group>"; };
+		A0D584F61AE619B30006EAE5 /* ContentTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTwoViewController.swift; sourceTree = "<group>"; };
+		A0D584F91AE61A480006EAE5 /* ContentThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentThreeViewController.swift; sourceTree = "<group>"; };
+		A0D584FC1AE61A5D0006EAE5 /* ContentFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentFourViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				A0D584CF1AE606CF0006EAE5 /* AppDelegate.swift */,
-				A0D584D11AE606CF0006EAE5 /* ViewController.swift */,
+				A0D584EF1AE606D40006EAE5 /* ViewControllers */,
 				A0D584D31AE606CF0006EAE5 /* Main.storyboard */,
 				A0D584D61AE606CF0006EAE5 /* Images.xcassets */,
 				A0D584D81AE606CF0006EAE5 /* LaunchScreen.xib */,
@@ -110,6 +118,66 @@
 				A0D584E41AE606CF0006EAE5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0D584EF1AE606D40006EAE5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0D584F01AE6070E0006EAE5 /* WalkthroughViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A0D584F01AE6070E0006EAE5 /* WalkthroughViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0D584D11AE606CF0006EAE5 /* ViewController.swift */,
+				A0D584F11AE619640006EAE5 /* ContentViewControllers */,
+			);
+			name = WalkthroughViewController;
+			sourceTree = "<group>";
+		};
+		A0D584F11AE619640006EAE5 /* ContentViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0D584FB1AE61A510006EAE5 /* ContentFourViewController */,
+				A0D584F81AE619BA0006EAE5 /* ContentThreeViewController */,
+				A0D584F51AE619A50006EAE5 /* ContentTwoViewController */,
+				A0D584F21AE619820006EAE5 /* ContentOneViewController */,
+			);
+			name = ContentViewControllers;
+			sourceTree = "<group>";
+		};
+		A0D584F21AE619820006EAE5 /* ContentOneViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0D584F31AE619A00006EAE5 /* ContentOneViewController.swift */,
+			);
+			name = ContentOneViewController;
+			sourceTree = "<group>";
+		};
+		A0D584F51AE619A50006EAE5 /* ContentTwoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0D584F61AE619B30006EAE5 /* ContentTwoViewController.swift */,
+			);
+			name = ContentTwoViewController;
+			sourceTree = "<group>";
+		};
+		A0D584F81AE619BA0006EAE5 /* ContentThreeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0D584F91AE61A480006EAE5 /* ContentThreeViewController.swift */,
+			);
+			name = ContentThreeViewController;
+			sourceTree = "<group>";
+		};
+		A0D584FB1AE61A510006EAE5 /* ContentFourViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0D584FC1AE61A5D0006EAE5 /* ContentFourViewController.swift */,
+			);
+			name = ContentFourViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D584FA1AE61A480006EAE5 /* ContentThreeViewController.swift in Sources */,
 				A0D584D21AE606CF0006EAE5 /* ViewController.swift in Sources */,
+				A0D584FD1AE61A5D0006EAE5 /* ContentFourViewController.swift in Sources */,
+				A0D584F71AE619B30006EAE5 /* ContentTwoViewController.swift in Sources */,
+				A0D584F41AE619A00006EAE5 /* ContentOneViewController.swift in Sources */,
 				A0D584D01AE606CF0006EAE5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
