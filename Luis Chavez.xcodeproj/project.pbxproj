@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0319D4C1AE9447B00B42A18 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0319D4B1AE9447B00B42A18 /* EducationViewController.swift */; };
+		A0319D4F1AE9453800B42A18 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0319D4E1AE9453800B42A18 /* TitleTableViewCell.swift */; };
+		A0319D521AE9455200B42A18 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0319D511AE9455200B42A18 /* DescriptionTableViewCell.swift */; };
+		A0319D551AE95B5F00B42A18 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0319D541AE95B5F00B42A18 /* AppViewController.swift */; };
+		A0319D581AE9685300B42A18 /* AppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0319D571AE9685300B42A18 /* AppTableViewCell.swift */; };
 		A0C08A671AE8AB5500FD7807 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C08A661AE8AB5500FD7807 /* EventsViewController.swift */; };
 		A0D584D01AE606CF0006EAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D584CF1AE606CF0006EAE5 /* AppDelegate.swift */; };
 		A0D584D21AE606CF0006EAE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D584D11AE606CF0006EAE5 /* ViewController.swift */; };
@@ -33,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0319D4B1AE9447B00B42A18 /* EducationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		A0319D4E1AE9453800B42A18 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		A0319D511AE9455200B42A18 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		A0319D541AE95B5F00B42A18 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		A0319D571AE9685300B42A18 /* AppTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTableViewCell.swift; sourceTree = "<group>"; };
 		A0C08A661AE8AB5500FD7807 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		A0D584CA1AE606CF0006EAE5 /* Luis Chavez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Luis Chavez.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D584CE1AE606CF0006EAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +80,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0319D4A1AE9446A00B42A18 /* EducationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0319D501AE9454500B42A18 /* DescriptionCell */,
+				A0319D4D1AE9451F00B42A18 /* TitleCell */,
+				A0319D4B1AE9447B00B42A18 /* EducationViewController.swift */,
+			);
+			name = EducationViewController;
+			sourceTree = "<group>";
+		};
+		A0319D4D1AE9451F00B42A18 /* TitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				A0319D4E1AE9453800B42A18 /* TitleTableViewCell.swift */,
+			);
+			name = TitleCell;
+			sourceTree = "<group>";
+		};
+		A0319D501AE9454500B42A18 /* DescriptionCell */ = {
+			isa = PBXGroup;
+			children = (
+				A0319D511AE9455200B42A18 /* DescriptionTableViewCell.swift */,
+			);
+			name = DescriptionCell;
+			sourceTree = "<group>";
+		};
+		A0319D531AE95B4C00B42A18 /* AppViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0319D561AE9684700B42A18 /* Cell */,
+				A0319D541AE95B5F00B42A18 /* AppViewController.swift */,
+			);
+			name = AppViewController;
+			sourceTree = "<group>";
+		};
+		A0319D561AE9684700B42A18 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A0319D571AE9685300B42A18 /* AppTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		A0C08A651AE8AB4600FD7807 /* EventsViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +190,8 @@
 		A0D584EF1AE606D40006EAE5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A0319D531AE95B4C00B42A18 /* AppViewController */,
+				A0319D4A1AE9446A00B42A18 /* EducationViewController */,
 				A0C08A651AE8AB4600FD7807 /* EventsViewController */,
 				A0D584FE1AE74DC80006EAE5 /* ProfileViewController */,
 				A0D584F01AE6070E0006EAE5 /* WalkthroughViewController */,
@@ -315,13 +370,18 @@
 			files = (
 				A0D584FA1AE61A480006EAE5 /* ContentThreeViewController.swift in Sources */,
 				A0D584D21AE606CF0006EAE5 /* ViewController.swift in Sources */,
+				A0319D551AE95B5F00B42A18 /* AppViewController.swift in Sources */,
 				A0D584FD1AE61A5D0006EAE5 /* ContentFourViewController.swift in Sources */,
+				A0319D4F1AE9453800B42A18 /* TitleTableViewCell.swift in Sources */,
+				A0319D521AE9455200B42A18 /* DescriptionTableViewCell.swift in Sources */,
+				A0319D4C1AE9447B00B42A18 /* EducationViewController.swift in Sources */,
 				A0D584F71AE619B30006EAE5 /* ContentTwoViewController.swift in Sources */,
 				A0D585011AE74E150006EAE5 /* ProfileViewController.swift in Sources */,
 				A0D584F41AE619A00006EAE5 /* ContentOneViewController.swift in Sources */,
 				A0D584D01AE606CF0006EAE5 /* AppDelegate.swift in Sources */,
 				A0D585041AE74E710006EAE5 /* HeadProfileTableViewCell.swift in Sources */,
 				A0C08A671AE8AB5500FD7807 /* EventsViewController.swift in Sources */,
+				A0319D581AE9685300B42A18 /* AppTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
