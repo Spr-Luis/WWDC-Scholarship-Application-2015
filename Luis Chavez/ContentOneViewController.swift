@@ -19,6 +19,9 @@ class ContentOneViewController: UIViewController {
     @IBOutlet weak var verticalConstraint: NSLayoutConstraint!
     
 
+    var animation:Bool = false
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,11 +37,25 @@ class ContentOneViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         
-        UIView.animateWithDuration(1.5, animations: { () -> Void in
+        if animated != true{
+            // First Animation
+            let scale = CGAffineTransformMakeScale(0.5, 0.5)
+            let translate = CGAffineTransformMakeTranslation(0, -300)
+            headImage.transform = CGAffineTransformConcat(scale, translate)
             
-            self.headImage.alpha = 1
             
-        })
+            UIView.animateWithDuration(0.7, animations: { () -> Void in
+                
+                let scale = CGAffineTransformMakeScale(1, 1)
+                let translate = CGAffineTransformMakeTranslation(0, 0)
+                self.headImage.transform = CGAffineTransformConcat(scale, translate)
+                
+                self.headImage.alpha = 1
+                
+            })
+            
+            animation = true
+        }
     }
     
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0C08A671AE8AB5500FD7807 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C08A661AE8AB5500FD7807 /* EventsViewController.swift */; };
 		A0D584D01AE606CF0006EAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D584CF1AE606CF0006EAE5 /* AppDelegate.swift */; };
 		A0D584D21AE606CF0006EAE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D584D11AE606CF0006EAE5 /* ViewController.swift */; };
 		A0D584D51AE606CF0006EAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D584D31AE606CF0006EAE5 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 		A0D584F71AE619B30006EAE5 /* ContentTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D584F61AE619B30006EAE5 /* ContentTwoViewController.swift */; };
 		A0D584FA1AE61A480006EAE5 /* ContentThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D584F91AE61A480006EAE5 /* ContentThreeViewController.swift */; };
 		A0D584FD1AE61A5D0006EAE5 /* ContentFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D584FC1AE61A5D0006EAE5 /* ContentFourViewController.swift */; };
+		A0D585011AE74E150006EAE5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D585001AE74E150006EAE5 /* ProfileViewController.swift */; };
+		A0D585041AE74E710006EAE5 /* HeadProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D585031AE74E710006EAE5 /* HeadProfileTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0C08A661AE8AB5500FD7807 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		A0D584CA1AE606CF0006EAE5 /* Luis Chavez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Luis Chavez.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D584CE1AE606CF0006EAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0D584CF1AE606CF0006EAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +48,8 @@
 		A0D584F61AE619B30006EAE5 /* ContentTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTwoViewController.swift; sourceTree = "<group>"; };
 		A0D584F91AE61A480006EAE5 /* ContentThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentThreeViewController.swift; sourceTree = "<group>"; };
 		A0D584FC1AE61A5D0006EAE5 /* ContentFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentFourViewController.swift; sourceTree = "<group>"; };
+		A0D585001AE74E150006EAE5 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A0D585031AE74E710006EAE5 /* HeadProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadProfileTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0C08A651AE8AB4600FD7807 /* EventsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0C08A661AE8AB5500FD7807 /* EventsViewController.swift */,
+			);
+			name = EventsViewController;
+			sourceTree = "<group>";
+		};
 		A0D584C11AE606CF0006EAE5 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +137,8 @@
 		A0D584EF1AE606D40006EAE5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A0C08A651AE8AB4600FD7807 /* EventsViewController */,
+				A0D584FE1AE74DC80006EAE5 /* ProfileViewController */,
 				A0D584F01AE6070E0006EAE5 /* WalkthroughViewController */,
 			);
 			name = ViewControllers;
@@ -178,6 +194,23 @@
 				A0D584FC1AE61A5D0006EAE5 /* ContentFourViewController.swift */,
 			);
 			name = ContentFourViewController;
+			sourceTree = "<group>";
+		};
+		A0D584FE1AE74DC80006EAE5 /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0D585021AE74E1B0006EAE5 /* Cells */,
+				A0D585001AE74E150006EAE5 /* ProfileViewController.swift */,
+			);
+			name = ProfileViewController;
+			sourceTree = "<group>";
+		};
+		A0D585021AE74E1B0006EAE5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A0D585031AE74E710006EAE5 /* HeadProfileTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,8 +317,11 @@
 				A0D584D21AE606CF0006EAE5 /* ViewController.swift in Sources */,
 				A0D584FD1AE61A5D0006EAE5 /* ContentFourViewController.swift in Sources */,
 				A0D584F71AE619B30006EAE5 /* ContentTwoViewController.swift in Sources */,
+				A0D585011AE74E150006EAE5 /* ProfileViewController.swift in Sources */,
 				A0D584F41AE619A00006EAE5 /* ContentOneViewController.swift in Sources */,
 				A0D584D01AE606CF0006EAE5 /* AppDelegate.swift in Sources */,
+				A0D585041AE74E710006EAE5 /* HeadProfileTableViewCell.swift in Sources */,
+				A0C08A671AE8AB5500FD7807 /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +519,7 @@
 				A0D584EB1AE606CF0006EAE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0D584EC1AE606CF0006EAE5 /* Build configuration list for PBXNativeTarget "Luis ChavezTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +528,7 @@
 				A0D584EE1AE606CF0006EAE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

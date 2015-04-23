@@ -22,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         pageControl.currentPageIndicatorTintColor = UIColor(red:0.22, green:0.54, blue:0.98, alpha:1)
         pageControl.backgroundColor = UIColor.clearColor()
         
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        UINavigationBar.appearance().shadowImage = UIImage.new()
+
+        
         return true
     }
 

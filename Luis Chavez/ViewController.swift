@@ -34,7 +34,7 @@ class ViewController: UIViewController,UIPageViewControllerDataSource,UIPageView
         pageViewController.dataSource = self
         
         self.pageViewController.setViewControllers([oneVC!], direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
-        
+                
         self.pageViewController.view.frame = self.containerView.frame
         self.addChildViewController(pageViewController)
         self.containerView.addSubview(pageViewController.view)
