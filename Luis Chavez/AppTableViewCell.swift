@@ -9,6 +9,21 @@
 import UIKit
 
 class AppTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var iconImage: UIImageView!
+    @IBOutlet weak var titleApp: UILabel!
+    @IBOutlet weak var descriptionApp: UILabel!
+    
+    @IBOutlet weak var storeButton: UIButton!
+    @IBOutlet weak var storeLabel: UILabel!
+    
+    var url:String!
+    
+    
+    
+    @IBAction func storeAction(sender: UIButton) {
+        
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
