@@ -32,6 +32,18 @@ class AppViewController: UIViewController {
             blur = true
         }
     }
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "webView"{
+            let nav = segue.destinationViewController as! UINavigationController
+            let webVC = nav.topViewController as! WebViewController
+            webVC.url = sender as! String
+        }
+        
+    }
 
     
         //MARK: UITableViewDataSource
@@ -50,8 +62,25 @@ class AppViewController: UIViewController {
         cell.titleApp.text = dataAplication[indexPath.row]["title"]
         cell.descriptionApp.text = dataAplication[indexPath.row]["text"]
         cell.iconImage.image = UIImage(named: dataAplication[indexPath.row]["image"]!)
-        cell.url = dataAplication [indexPath.row]["url"]
+
+        var status = dataAplication[indexPath.row]["status"]
         
+        if status == "Store"{
+            cell.statusImage.image = UIImage(named: "iPhoneMini")
+            cell.storeLabel.text = "Store"
+            cell.statusImage.contentMode = UIViewContentMode.Center
+        }else if status == "Dev"{
+            cell.statusImage.image = UIImage(named: "toolIcon")
+            cell.iconImage.contentMode = UIViewContentMode.ScaleAspectFit
+            cell.storeLabel.text = "Dev"
+        }else if status == "Open Source"{
+            cell.statusImage.image = UIImage(named: "gitIcon")
+            cell.iconImage.contentMode = UIViewContentMode.ScaleAspectFit
+            cell.storeLabel.text = "Open"
+        }
+        
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
+
         return cell
     }
     
@@ -63,7 +92,41 @@ class AppViewController: UIViewController {
         return 140
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if dataAplication[indexPath.row]["status"] == "Store"{
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            
+            var alert = UIAlertController(title: "App Store", message: "You want to see the application in the App Store?", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.Default, handler: { (action:UIAlertAction!) -> Void in
+                UIApplication.sharedApplication().openURL(NSURL(string: self.dataAplication[indexPath.row]["url"]!)!)
+            }))
+            alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.Cancel, handler: nil))
+            delay(0.3, closure: { () -> () in
+                self.presentViewController(alert, animated: true, completion: nil)
+            })
+            
+        }else if dataAplication[indexPath.row]["status"] == "Open Source"{
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            
+            delay(0.3, closure: { () -> () in
+                self.performSegueWithIdentifier("webView", sender: self.dataAplication[indexPath.row]["url"])
+            })
+
+        }else{
+            tableView.deselectRowAtIndexPath(indexPath, animated: false)
+            
+        }
+    }
     
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+    }
     
     func getDataApp() -> Array<Dictionary<String,String>> {
         
@@ -73,20 +136,20 @@ class AppViewController: UIViewController {
                 "image" : "IconLibrosUnam",
                 "status" : "Store",
                 "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "url" : "https://itunes.apple.com/us/app/libros-unam/id944566736?l=es&ls=1&mt=8"
+                "url" : "itms-apps://itunes.apple.com/app/id944566736"
             ],[
                 "title" : "LastRoom",
                 "image" : "IconLastRoom",
                 "status" : "Store",
                 "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "url" : "https://itunes.apple.com/us/app/lastroom/id581428383?l=es&ls=1&mt=8"
+                "url" : "itms-apps://itunes.apple.com/app/id581428383"
             ],
             [
                 "title" : "Gasolineras VIP",
                 "image" : "IconGas",
                 "status" : "Store",
                 "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "url" : "https://itunes.apple.com/us/app/gasolineras-vip/id861774103?mt=8&ign-mpt=uo%3D4"
+                "url" : "itms-apps://itunes.apple.com/app/id861774103"
             ],
             [
                 "title" : "Fobos",
@@ -107,14 +170,14 @@ class AppViewController: UIViewController {
                 "image" : "IconMejora",
                 "status" : "Dev",
                 "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "url" : ""
+                "url" : "."
             ],
             [
                 "title" : "Amnios",
                 "image" : "IconAmnios",
                 "status" : "Dev",
                 "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "url" : ""
+                "url" : "."
             ],
             [
                 "title" : "Weekend",
@@ -128,7 +191,7 @@ class AppViewController: UIViewController {
                 "image" : "IconBiz",
                 "status" : "Dev",
                 "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "url" : ""
+                "url" : "."
             ],
             
             
@@ -136,7 +199,6 @@ class AppViewController: UIViewController {
         
         return data
     }
-
     
     // MARK: - Blur
     

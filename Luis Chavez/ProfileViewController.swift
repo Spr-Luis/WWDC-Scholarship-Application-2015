@@ -124,4 +124,16 @@ class ProfileViewController: UIViewController {
     func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UIView()
     }
+    
+    
+    //MARK: Social Action
+    
+    @IBAction func socialAction(sender: UIButton) {
+        switch sender.tag{
+        case 1:
+            
+        case 2:
+        }
+    }
+    
 }

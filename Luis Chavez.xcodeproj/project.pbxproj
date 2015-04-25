@@ -12,6 +12,7 @@
 		A0319D521AE9455200B42A18 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0319D511AE9455200B42A18 /* DescriptionTableViewCell.swift */; };
 		A0319D551AE95B5F00B42A18 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0319D541AE95B5F00B42A18 /* AppViewController.swift */; };
 		A0319D581AE9685300B42A18 /* AppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0319D571AE9685300B42A18 /* AppTableViewCell.swift */; };
+		A0608C3E1AEAE46B00287EDB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0608C3D1AEAE46B00287EDB /* WebViewController.swift */; };
 		A0C08A671AE8AB5500FD7807 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C08A661AE8AB5500FD7807 /* EventsViewController.swift */; };
 		A0D584D01AE606CF0006EAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D584CF1AE606CF0006EAE5 /* AppDelegate.swift */; };
 		A0D584D21AE606CF0006EAE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D584D11AE606CF0006EAE5 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		A0319D511AE9455200B42A18 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		A0319D541AE95B5F00B42A18 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		A0319D571AE9685300B42A18 /* AppTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTableViewCell.swift; sourceTree = "<group>"; };
+		A0608C3D1AEAE46B00287EDB /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		A0C08A661AE8AB5500FD7807 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		A0D584CA1AE606CF0006EAE5 /* Luis Chavez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Luis Chavez.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D584CE1AE606CF0006EAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
+		A0608C3C1AEAE45E00287EDB /* WebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0608C3D1AEAE46B00287EDB /* WebViewController.swift */,
+			);
+			name = WebViewController;
+			sourceTree = "<group>";
+		};
 		A0C08A651AE8AB4600FD7807 /* EventsViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +200,7 @@
 		A0D584EF1AE606D40006EAE5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A0608C3C1AEAE45E00287EDB /* WebViewController */,
 				A0319D531AE95B4C00B42A18 /* AppViewController */,
 				A0319D4A1AE9446A00B42A18 /* EducationViewController */,
 				A0C08A651AE8AB4600FD7807 /* EventsViewController */,
@@ -381,6 +392,7 @@
 				A0D584D01AE606CF0006EAE5 /* AppDelegate.swift in Sources */,
 				A0D585041AE74E710006EAE5 /* HeadProfileTableViewCell.swift in Sources */,
 				A0C08A671AE8AB5500FD7807 /* EventsViewController.swift in Sources */,
+				A0608C3E1AEAE46B00287EDB /* WebViewController.swift in Sources */,
 				A0319D581AE9685300B42A18 /* AppTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,12 +7,12 @@
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "IconGas@2x.png"
+      "filename" : "gitIcon@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "IconGas@3x.png"
+      "filename" : "gitIcon@3x.png"
     }
   ],
   "info" : {
