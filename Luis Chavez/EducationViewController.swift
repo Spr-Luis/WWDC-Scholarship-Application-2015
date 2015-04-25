@@ -32,4 +32,67 @@ class EducationViewController: UIViewController {
     }
     */
 
+    
+    
+    func getDataEducation() -> Array<Dictionary<String,String>> {
+        
+        var data = [
+            [
+                "category" : "Education",
+                "cell" : "0",
+                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            ],[
+                "title" : "High School",
+                "cell" : "1",
+                "image" : "enp5",
+                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            ],[
+                "title" : "University",
+                "cell" : "1",
+                "image" : "enp5",
+                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            ],[
+                "category" : "Work",
+                "cell" : "0",
+                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            ],[
+                "title" : "UM - Testing",
+                "cell" : "1",
+                "image" : "enp5",
+                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            ],[
+                "title" : "UM - iOS Dev",
+                "cell" : "1",
+                "image" : "enp5",
+                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            ],[
+                "title" : "UM - iOS Dev Chief",
+                "cell" : "1",
+                "image" : "enp5",
+                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            ],[
+                "title" : "LastRoom - iOS Dev",
+                "cell" : "1",
+                "image" : "enp5",
+                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            ],[
+                "category" : "Goals",
+                "cell" : "0",
+                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            ],[
+                "title" : "UM - Testing",
+                "cell" : "1",
+                "image" : "enp5",
+                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            ],[
+                "title" : "UM - iOS Dev",
+                "cell" : "1",
+                "image" : "enp5",
+                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            ],
+        ]
+
+        
+        return data
+    }
 }
