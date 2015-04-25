@@ -35,6 +35,12 @@ class AppViewController: UIViewController {
             insertBlurView(blurBackground, style: UIBlurEffectStyle.Dark)
             blur = true
         }
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        self.tableView.reloadData()
     }
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -85,6 +91,9 @@ class AppViewController: UIViewController {
         
         cell.selectionStyle = UITableViewCellSelectionStyle.None
 
+        cell.setNeedsUpdateConstraints()
+        cell.setNeedsLayout()
+        
         return cell
     }
     
@@ -123,8 +132,10 @@ class AppViewController: UIViewController {
         }
     }
     
+    
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         if tableView.dragging{
+            
             
             if scroll == UIImageOrientation.Down{
                 let scale = CGAffineTransformMakeScale(0.8, 0.8)

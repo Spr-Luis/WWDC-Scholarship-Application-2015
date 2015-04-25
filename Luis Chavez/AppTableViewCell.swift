@@ -19,6 +19,7 @@ class AppTableViewCell: UITableViewCell {
     
     @IBOutlet weak var cardView: UIView!
     
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -28,41 +29,41 @@ class AppTableViewCell: UITableViewCell {
         
             let scale = CGAffineTransformMakeScale(1, 1)
             let translate = CGAffineTransformMakeTranslation(0, 0)
-            self.cardView.transform = CGAffineTransformConcat(scale, translate)
+            self.transform = CGAffineTransformConcat(scale, translate)
             
             
             UIView.animateWithDuration(0.15, animations: { () -> Void in
                 let scale = CGAffineTransformMakeScale(1.2, 1.2)
                 let translate = CGAffineTransformMakeTranslation(0, 0)
-                self.cardView.transform = CGAffineTransformConcat(scale, translate)
+                self.transform = CGAffineTransformConcat(scale, translate)
 
             }, completion: { (void) -> Void in
                 
                 UIView.animateWithDuration(0.075, animations: { () -> Void in
                     let scale = CGAffineTransformMakeScale(1, 1)
                     let translate = CGAffineTransformMakeTranslation(0, 0)
-                    self.cardView.transform = CGAffineTransformConcat(scale, translate)
+                    self.transform = CGAffineTransformConcat(scale, translate)
                 })
                 
             })
         
-        } else{
+        } /*else{
             
             UIView.animateKeyframesWithDuration(0.2,
                 delay: 0,
                 options: UIViewKeyframeAnimationOptions.BeginFromCurrentState,
                 animations: {
                     UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 1/4, animations: {
-                        self.cardView.transform = CGAffineTransformMakeTranslation(-5, 0)
+                        self.transform = CGAffineTransformMakeTranslation(-5, 0)
                     })
                     UIView.addKeyframeWithRelativeStartTime(1/4, relativeDuration: 1/4, animations: {
-                        self.cardView.transform = CGAffineTransformMakeTranslation(5, 0)
+                        self.transform = CGAffineTransformMakeTranslation(5, 0)
                     })
                     UIView.addKeyframeWithRelativeStartTime(2/4, relativeDuration: 1/4, animations: {
-                        self.cardView.transform = CGAffineTransformMakeTranslation(-5, 0)
+                        self.transform = CGAffineTransformMakeTranslation(-5, 0)
                     })
                     UIView.addKeyframeWithRelativeStartTime(3/4, relativeDuration: 1/4, animations: {
-                        self.cardView.transform = CGAffineTransformMakeTranslation(5, 0)
+                        self.transform = CGAffineTransformMakeTranslation(5, 0)
                     })
                 },
                 completion: { (success: Bool) -> Void in
@@ -71,7 +72,7 @@ class AppTableViewCell: UITableViewCell {
             )
 
         
-        }
+        }*/
     }
 
 }
