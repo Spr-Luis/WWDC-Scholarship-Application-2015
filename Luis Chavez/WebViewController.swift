@@ -53,6 +53,16 @@ class WebViewController: UIViewController,UIWebViewDelegate {
     
     }
     
+    func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
+        if error.code == NSURLErrorNotConnectedToInternet || error.code == NSURLErrorNetworkConnectionLost{
+            var alert = UIAlertController(title: "No Internet", message: "Check internet connection.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: { (action:UIAlertAction!) -> Void in
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+    
     deinit {
         webView.stopLoading()
         webView.delegate = nil

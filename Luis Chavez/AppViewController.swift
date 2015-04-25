@@ -15,7 +15,11 @@ class AppViewController: UIViewController {
 
     @IBOutlet weak var blurBackground: UIView!
     @IBOutlet weak var tableView: UITableView!
-     
+    
+    
+    var scroll:UIImageOrientation!
+    var last:CGPoint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -118,6 +122,36 @@ class AppViewController: UIViewController {
             
         }
     }
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        if tableView.dragging{
+            
+            if scroll == UIImageOrientation.Down{
+                let scale = CGAffineTransformMakeScale(0.8, 0.8)
+                let translate = CGAffineTransformMakeTranslation(0, -100)
+                cell.contentView.transform = CGAffineTransformConcat(scale, translate)
+            }else{
+                let scale = CGAffineTransformMakeScale(0.8, 0.8)
+                let translate = CGAffineTransformMakeTranslation(0, +400)
+                cell.contentView.transform = CGAffineTransformConcat(scale, translate)
+
+            }
+            
+            
+            UIView.animateWithDuration(0.7, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: nil, animations: {
+                
+                let scale = CGAffineTransformMakeScale(1, 1)
+                let translate = CGAffineTransformMakeTranslation(0, 0)
+                cell.contentView.transform = CGAffineTransformConcat(scale, translate)
+                
+                }, completion:nil)
+        }
+    }
+    
+    func scrollViewDidScroll(scrollView: UIScrollView!) {
+        scroll = UIImageOrientation.Down
+    }
+    
     
     func delay(delay:Double, closure:()->()) {
         dispatch_after(

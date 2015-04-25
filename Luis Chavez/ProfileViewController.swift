@@ -29,15 +29,20 @@ class ProfileViewController: UIViewController {
 
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "webView"{
+            let nav = segue.destinationViewController as! UINavigationController
+            let webVC = nav.topViewController as! WebViewController
+            webVC.url = sender as! String
+        }
     }
-    */
+    
     
     
     //MARK: UITableViewDelegate
@@ -117,8 +122,6 @@ class ProfileViewController: UIViewController {
     
     func configureCell(cell: HeadProfileTableViewCell, forRowAtIndexPath: NSIndexPath) {
         
-        
-        
     }
     
     func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
@@ -131,8 +134,17 @@ class ProfileViewController: UIViewController {
     @IBAction func socialAction(sender: UIButton) {
         switch sender.tag{
         case 1:
-            
+            self.performSegueWithIdentifier("webView", sender: "http://www.twitter.com/Spr_Luis")
         case 2:
+            self.performSegueWithIdentifier("webView", sender: "http://www.facebook.com/LuisArmandhoo")
+        case 3:
+            self.performSegueWithIdentifier("webView", sender: "http://github.com/Spr-Luis")
+        case 4:
+            self.performSegueWithIdentifier("webView", sender: "http://linkedin.com/in/sprluis")
+        case 5:
+            self.performSegueWithIdentifier("webView", sender: "http://profile.luischavez.me")
+        default:
+            println()
         }
     }
     

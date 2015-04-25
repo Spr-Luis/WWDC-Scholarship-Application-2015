@@ -791,7 +791,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="CVo-ua-DXc" firstAttribute="leading" secondItem="kBZ-j2-cnQ" secondAttribute="leading" constant="8" id="3w0-3n-d0v"/>
                                                     <constraint firstAttribute="bottom" secondItem="CVo-ua-DXc" secondAttribute="bottom" constant="8" id="9uh-DR-I9i"/>
@@ -1364,6 +1364,9 @@
                                                             <include reference="wRb-2x-7Tq"/>
                                                         </mask>
                                                     </variation>
+                                                    <connections>
+                                                        <action selector="socialAction:" destination="t4a-hB-24K" eventType="touchUpInside" id="eHJ-II-jve"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJS-tH-fV1">
                                                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -1386,6 +1389,9 @@
                                                             <include reference="zTL-YH-mqe"/>
                                                         </mask>
                                                     </variation>
+                                                    <connections>
+                                                        <action selector="socialAction:" destination="t4a-hB-24K" eventType="touchUpInside" id="q8a-r2-Hah"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ths-Q9-Qf4">
                                                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -1408,6 +1414,9 @@
                                                             <include reference="qb5-UD-3AI"/>
                                                         </mask>
                                                     </variation>
+                                                    <connections>
+                                                        <action selector="socialAction:" destination="t4a-hB-24K" eventType="touchUpInside" id="P6s-FA-6CK"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIM-Cf-GE8">
                                                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -1430,6 +1439,9 @@
                                                             <include reference="iVj-UA-sJQ"/>
                                                         </mask>
                                                     </variation>
+                                                    <connections>
+                                                        <action selector="socialAction:" destination="t4a-hB-24K" eventType="touchUpInside" id="Y4m-lO-a0I"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -1690,9 +1702,6 @@
                             <connections>
                                 <action selector="removeWebViewAction:" destination="yGh-8d-nHY" id="WiC-ma-Oga"/>
                             </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="rFA-G7-tUS">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
