@@ -1,8 +1,8 @@
 //
-//  EducationViewController.swift
+//  CVTableViewController.swift
 //  Luis Chavez
 //
-//  Created by Luis Armando Chávez Soto on 23/04/15.
+//  Created by Luis Armando Chávez Soto on 26/04/15.
 //  Copyright (c) 2015 me.luischavez. All rights reserved.
 //
 
@@ -12,19 +12,19 @@ private let kTableHeaderHeight: CGFloat = 300.0
 private let kTableHeaderCutAway: CGFloat = 80.0
 
 
-class EducationViewController: UIViewController {
+class CVTableViewController: UITableViewController {
+    
     var dataEducation: Array<Dictionary<String,String>>!
 
-    @IBOutlet weak var tableView: UITableView!
-
+    
     var scroll:UIImageOrientation!
     var last:CGFloat = 0
-
+    
     
     var headerView: UIView!
     var headerMaskLayer: CAShapeLayer!
 
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,12 +43,11 @@ class EducationViewController: UIViewController {
         
         headerView.layer.mask = headerMaskLayer
         updateHeaderView()
-
+        
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        updateHeaderView()
     }
     
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
@@ -78,24 +77,23 @@ class EducationViewController: UIViewController {
         path.addLineToPoint(CGPoint(x: 0, y: headerRect.height-kTableHeaderCutAway))
         headerMaskLayer?.path = path.CGPath
     }
-
+    
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
-        tableView.reloadData()
     }
-
-        //MARK: UITableViewDataSource
-
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    
+    //MARK: UITableViewDataSource
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataEducation.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         if dataEducation[indexPath.row]["cell"] == "0"{
             // Title
@@ -103,7 +101,7 @@ class EducationViewController: UIViewController {
             cell.titleLabel.text = dataEducation[indexPath.row]["category"]
             cell.descriptionLabel.text = dataEducation[indexPath.row]["text"]
             return cell
-
+            
         }else{
             // Description
             let cell:DescriptionTableViewCell = tableView.dequeueReusableCellWithIdentifier("description", forIndexPath: indexPath) as! DescriptionTableViewCell
@@ -115,28 +113,28 @@ class EducationViewController: UIViewController {
             }
             
             return cell
-
+            
         }
         
         
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if dataEducation[indexPath.row]["cell"] == "0"{
             return 123
         }else{
             return 80
         }
     }
-
-
-        //MARK: UITableViewDelegate
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    
+    //MARK: UITableViewDelegate
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
     }
-
-    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         if tableView.dragging{
             
             
@@ -152,13 +150,13 @@ class EducationViewController: UIViewController {
                     cell.contentView.transform = CGAffineTransformConcat(scale, translate)
                     
                     }, completion:nil)
-
+                
             }
         }
     }
     
-    func scrollViewDidScroll(scrollView: UIScrollView!) {
-
+    override func scrollViewDidScroll(scrollView: UIScrollView!) {
+        
         
         if last > scrollView.contentOffset.y{
             scroll = UIImageOrientation.Up
@@ -167,7 +165,7 @@ class EducationViewController: UIViewController {
         }
         
         last = scrollView.contentOffset.y
-
+        
     }
     
     func getDataEducation() -> Array<Dictionary<String,String>> {
@@ -241,7 +239,7 @@ class EducationViewController: UIViewController {
                 "text"  : "Continue to learn and become a better person every day.",
             ],
         ]
-
+        
         
         return data
     }

@@ -182,42 +182,42 @@ class EventsViewController: UIViewController {
                 "date": "January 24-26, 2014, Mexico City",
                 "image" : "hackdfphoto",
                 "award" : "hackdf",
-                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                "text"  : "Second place winner in the first hackathon organized by the city government of Mexico, as part of the interdisciplinary team of UNAM Mobile."
             ],
             [
                 "title" : "NASA Spaces Apps Challenge",
                 "date": "April 11-12, 2014, Mexico City",
                 "image" : "nasahack",
                 "award" : "nasa",
-                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                "text"  : "Won first place in the hackathon NASA and finalist worldwide with our robot and iPad app, Fobos."
             ],
             [
                 "title" : "Stanford Presentation",
                 "date": "July, 2014, Palo Alto, CA",
                 "image" : "stand",
                 "award" : "unamMobile",
-                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                "text"  : "Development Manager app for iOS and OS X presented in conjunction with Libros UNAM at the University of Stanford."
             ],
             [
                 "title" : "Hack UNAM",
                 "date": "August 29-31, 2014, Mexico City",
                 "image" : "hackunam",
                 "award" : "unamMobile",
-                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                "text"  : "Mentor of mobile applications in the first hackathon organized within the National Autonomous University of Mexico."
             ],
             [
                 "title" : "PodiUM Presentation",
                 "date": "September 2, 2014, Mexico City",
                 "image" : "podiumphoto",
                 "award" : "unamMobile",
-                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                "text"  : "Introducing the first smart jacket linked to an iOS device UNAM Mobile."
             ],
             [
                 "title" : "Distrupt SF Hackathon",
                 "date": "September 6-7, 2014, San Francisco, CA",
                 "image" : "cover",
                 "award" : "",
-                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                "text"  : "Participant organized by TechCrunch Hackathon in San Francisco."
             ],
 
 

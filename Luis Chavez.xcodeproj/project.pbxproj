@@ -13,6 +13,7 @@
 		A0319D551AE95B5F00B42A18 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0319D541AE95B5F00B42A18 /* AppViewController.swift */; };
 		A0319D581AE9685300B42A18 /* AppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0319D571AE9685300B42A18 /* AppTableViewCell.swift */; };
 		A0608C3E1AEAE46B00287EDB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0608C3D1AEAE46B00287EDB /* WebViewController.swift */; };
+		A0A6684E1AED22A800F1F752 /* CVTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6684D1AED22A800F1F752 /* CVTableViewController.swift */; };
 		A0C08A671AE8AB5500FD7807 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C08A661AE8AB5500FD7807 /* EventsViewController.swift */; };
 		A0D584D01AE606CF0006EAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D584CF1AE606CF0006EAE5 /* AppDelegate.swift */; };
 		A0D584D21AE606CF0006EAE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D584D11AE606CF0006EAE5 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 		A0319D541AE95B5F00B42A18 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		A0319D571AE9685300B42A18 /* AppTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTableViewCell.swift; sourceTree = "<group>"; };
 		A0608C3D1AEAE46B00287EDB /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		A0A6684D1AED22A800F1F752 /* CVTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVTableViewController.swift; sourceTree = "<group>"; };
 		A0C08A661AE8AB5500FD7807 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		A0D584CA1AE606CF0006EAE5 /* Luis Chavez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Luis Chavez.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D584CE1AE606CF0006EAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,6 +135,14 @@
 			name = WebViewController;
 			sourceTree = "<group>";
 		};
+		A0A6684C1AED229100F1F752 /* CVViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0A6684D1AED22A800F1F752 /* CVTableViewController.swift */,
+			);
+			name = CVViewController;
+			sourceTree = "<group>";
+		};
 		A0C08A651AE8AB4600FD7807 /* EventsViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +210,7 @@
 		A0D584EF1AE606D40006EAE5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A0A6684C1AED229100F1F752 /* CVViewController */,
 				A0608C3C1AEAE45E00287EDB /* WebViewController */,
 				A0319D531AE95B4C00B42A18 /* AppViewController */,
 				A0319D4A1AE9446A00B42A18 /* EducationViewController */,
@@ -385,6 +396,7 @@
 				A0D584FD1AE61A5D0006EAE5 /* ContentFourViewController.swift in Sources */,
 				A0319D4F1AE9453800B42A18 /* TitleTableViewCell.swift in Sources */,
 				A0319D521AE9455200B42A18 /* DescriptionTableViewCell.swift in Sources */,
+				A0A6684E1AED22A800F1F752 /* CVTableViewController.swift in Sources */,
 				A0319D4C1AE9447B00B42A18 /* EducationViewController.swift in Sources */,
 				A0D584F71AE619B30006EAE5 /* ContentTwoViewController.swift in Sources */,
 				A0D585011AE74E150006EAE5 /* ProfileViewController.swift in Sources */,
@@ -476,6 +488,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 			};
 			name = Debug;
 		};
@@ -512,6 +525,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

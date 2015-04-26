@@ -56,7 +56,7 @@ class ProfileViewController: UIViewController {
             return 230
         }
         
-        return 500
+        return 680
     }
     
     //MARK: UITableViewDataSource

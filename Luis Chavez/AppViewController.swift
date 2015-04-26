@@ -180,62 +180,62 @@ class AppViewController: UIViewController {
                 "title" : "Libros UNAM",
                 "image" : "IconLibrosUnam",
                 "status" : "Store",
-                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "text"  : "iPad application where there is a large catalog of free books from the National Autonomous University of Mexico.",
                 "url" : "itms-apps://itunes.apple.com/app/id944566736"
             ],[
                 "title" : "LastRoom",
                 "image" : "IconLastRoom",
                 "status" : "Store",
-                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "text"  : "The app hotels for the same simple and efficient night, now with worldwide deals by LastRoom.",
                 "url" : "itms-apps://itunes.apple.com/app/id581428383"
             ],
             [
                 "title" : "Gasolineras VIP",
                 "image" : "IconGas",
                 "status" : "Store",
-                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "text"  : "Create a ranking nationally on gas stations with the best service in Mexico.",
                 "url" : "itms-apps://itunes.apple.com/app/id861774103"
             ],
             [
                 "title" : "Fobos",
                 "image" : "IconFobos",
                 "status" : "Open Source",
-                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "text"  : "iPad application that makes use of the BLE technology to control a small rover.",
                 "url" : "https://github.com/Spr-Luis/FOBOS-Mars"
             ],
             [
                 "title" : "Adiuvo",
                 "image" : "IconAdiuvo",
                 "status" : "Open Source",
-                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "text"  : "The best way to find lost people in the city of Mexico.",
                 "url" : "https://github.com/Spr-Luis/Adiuvo"
             ],
             [
                 "title" : "Mejora MX",
                 "image" : "IconMejora",
                 "status" : "Dev",
-                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "text"  : "Knows better the candidates for election elections in Mexico.",
                 "url" : "."
             ],
             [
                 "title" : "Amnios",
                 "image" : "IconAmnios",
                 "status" : "Dev",
-                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "text"  : "Your staff specialist at at your fingertips.",
                 "url" : "."
             ],
             [
                 "title" : "Weekend",
                 "image" : "IconWeekend",
                 "status" : "Dev",
-                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "text"  : "The application to discover new places and book hotels weekends.",
                 "url" : ""
             ],
             [
                 "title" : "LastRoom for Business",
                 "image" : "IconBiz",
                 "status" : "Dev",
-                "text"  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "text"  : "Manages hotel reservations for all your employees from an application.",
                 "url" : "."
             ],
             
