@@ -12,7 +12,7 @@ private let kTableHeaderHeight: CGFloat = 300.0
 private let kTableHeaderCutAway: CGFloat = 80.0
 
 
-class CVTableViewController: UITableViewController {
+class CVTableViewController: UITableViewController,UIScrollViewDelegate{
     
     var dataEducation: Array<Dictionary<String,String>>!
 
@@ -77,8 +77,7 @@ class CVTableViewController: UITableViewController {
         path.addLineToPoint(CGPoint(x: 0, y: headerRect.height-kTableHeaderCutAway))
         headerMaskLayer?.path = path.CGPath
     }
-    
-    
+
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
     }
@@ -107,6 +106,8 @@ class CVTableViewController: UITableViewController {
             let cell:DescriptionTableViewCell = tableView.dequeueReusableCellWithIdentifier("description", forIndexPath: indexPath) as! DescriptionTableViewCell
             cell.titleLabel.text = dataEducation[indexPath.row]["title"]
             cell.descriptionLabel.text = dataEducation[indexPath.row]["text"]
+            
+            cell.finalSection.hidden = false
             
             if dataEducation[indexPath.row]["final"] == "1"{
                 cell.finalSection.hidden = true
@@ -155,8 +156,7 @@ class CVTableViewController: UITableViewController {
         }
     }
     
-    override func scrollViewDidScroll(scrollView: UIScrollView!) {
-        
+    override func scrollViewDidScroll(scrollView: UIScrollView) {
         
         if last > scrollView.contentOffset.y{
             scroll = UIImageOrientation.Up
@@ -166,6 +166,7 @@ class CVTableViewController: UITableViewController {
         
         last = scrollView.contentOffset.y
         
+        updateHeaderView()
     }
     
     func getDataEducation() -> Array<Dictionary<String,String>> {
