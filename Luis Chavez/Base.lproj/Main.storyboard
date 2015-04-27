@@ -1251,8 +1251,7 @@
                                                             <exclude reference="WMv-qx-Uw0"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="8" y="8" width="304" height="21"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="WMv-qx-Uw0"/>
                                                         </mask>
@@ -1271,8 +1270,7 @@
                                                             <exclude reference="FiZ-xy-XVr"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="8" y="37" width="304" height="21"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="FiZ-xy-XVr"/>
                                                         </mask>
@@ -1297,8 +1295,7 @@ I have participated in big events such as the Congreso Universitario Movil, orga
                                                             <exclude reference="6Ik-ps-Cbw"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="8" y="66" width="304" height="344"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="6Ik-ps-Cbw"/>
                                                         </mask>
@@ -1320,8 +1317,7 @@ I have participated in big events such as the Congreso Universitario Movil, orga
                                                             <exclude reference="WfT-tn-mEo"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="8" y="424" width="304" height="160"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="WfT-tn-mEo"/>
                                                         </mask>
@@ -1342,8 +1338,7 @@ I have participated in big events such as the Congreso Universitario Movil, orga
                                                             <exclude reference="Vm1-yk-zLD"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="19" y="607" width="50" height="50"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="AO3-2b-27Y"/>
                                                             <include reference="Vm1-yk-zLD"/>
@@ -1368,8 +1363,7 @@ I have participated in big events such as the Congreso Universitario Movil, orga
                                                             <exclude reference="wRb-2x-7Tq"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="77" y="607" width="50" height="50"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="DRM-nN-HIq"/>
                                                             <include reference="wRb-2x-7Tq"/>
@@ -1394,8 +1388,7 @@ I have participated in big events such as the Congreso Universitario Movil, orga
                                                             <exclude reference="zTL-YH-mqe"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="135" y="607" width="50" height="50"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="UoE-mw-RdK"/>
                                                             <include reference="zTL-YH-mqe"/>
@@ -1420,8 +1413,7 @@ I have participated in big events such as the Congreso Universitario Movil, orga
                                                             <exclude reference="qb5-UD-3AI"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="193" y="607" width="50" height="50"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="cAA-Ip-HKz"/>
                                                             <include reference="qb5-UD-3AI"/>
@@ -1446,8 +1438,7 @@ I have participated in big events such as the Congreso Universitario Movil, orga
                                                             <exclude reference="iVj-UA-sJQ"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="251" y="607" width="50" height="50"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="Npc-Iw-sWg"/>
                                                             <include reference="iVj-UA-sJQ"/>
