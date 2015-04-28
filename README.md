@@ -27,7 +27,7 @@ All iOS Devices with iOS 8 Sup.
 ## Contact
 #### Luis Chavez / UNAM Mobile
 * Homepage: [http://profile.luischave.me](http://profile.luischave.me "Website")
-* e-mail: mail@luischavez.mc
+* e-mail: mail@luischavez.me
 * Twitter: [@Spr_Luis](https://twitter.com/twitterhandle "Spr_Luis on twitter")
 
 [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=username&url=https://github.com/username/appname&title=appname&language=&tags=github&category=software) 
