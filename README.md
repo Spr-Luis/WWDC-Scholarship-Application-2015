@@ -4,7 +4,7 @@ Luis Chavez is an app for WWDC 15 Scholarshp.
 
 #### Screenshot
 
-![Screenshot iOS](http://url/screenshot-appname-ios.png "screenshot iOS")
+![Screenshot iOS](https://github.com/Spr-Luis/WWDC-Scholarship-Application-2015/blob/master/ScreenShots/app_icon.png?raw=true "iOS icon")
 
 #### App Stores
 <!-- edit this image location -->
@@ -25,11 +25,8 @@ All iOS Devices with iOS 8 Sup.
 ## Version 
 * Version 1.0
 
-## How-to use this code
-* see [INSTRUCTIONS](https://github.com/username/appname/blob/master/INSTRUCTIONS.md) file
-
 ## Contact
-#### Developer/Company
+#### Luis Chavez / UNAM Mobile
 * Homepage: 
 * e-mail: 
 * Twitter: [@Spr_Luis](https://twitter.com/twitterhandle "Spr_Luis on twitter")
