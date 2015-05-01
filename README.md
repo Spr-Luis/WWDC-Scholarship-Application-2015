@@ -1,4 +1,4 @@
-Luis Chaves
+Luis Chavez
 ======
 Luis Chavez is an app for WWDC 15 Scholarshp.
 
